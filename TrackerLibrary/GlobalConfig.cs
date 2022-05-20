@@ -26,7 +26,6 @@ namespace TrackerLibrary
 
                 TextConnector text = new TextConnector ();
                 Connections.Add (text);
-                //jjpdsojspogd
             }
         }
     }
