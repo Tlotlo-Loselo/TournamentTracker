@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using TrackerLibrary;
+using TrackerLibrary.DataAccess;
+using TrackerLibrary.Models;
 
 namespace TrackerUI
 {
@@ -51,7 +53,7 @@ namespace TrackerUI
             //placeNumber Validation
 
             int placeNumber = 0;
-            bool placeNumberValidNumber = int.TryParse(placeNameValue.Text, out placeNumber);
+            bool placeNumberValidNumber = int.TryParse(placeNumberValue.Text, out placeNumber);
 
             if (placeNumberValidNumber == false)
             {
@@ -63,9 +65,9 @@ namespace TrackerUI
                 output = false;
             }
 
-            //placeNumberValue Validation
+            //placeNameValue Validation
 
-            if (placeNumberValue.Text.Length == 0)
+            if (placeNameValue.Text.Length == 0)
             {
                 output = false;
             }
