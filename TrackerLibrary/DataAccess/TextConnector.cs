@@ -12,7 +12,7 @@ namespace TrackerLibrary.DataAccess
         // TODO - Wire up the CreatePrize for text files
         public PrizeModel CreatePrize(PrizeModel model)
         {
-            model.id = 1;
+            model.Id = 1;
 
             return model;
         }
